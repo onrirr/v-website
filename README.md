@@ -1,6 +1,7 @@
-# test
+# v-lang website
 
-This template should help get you started developing with Vue 3 in Vite.
+This is a basic website made with Vue. It is not really complete but might be completed someday.
+
 
 ## Recommended IDE Setup
 
