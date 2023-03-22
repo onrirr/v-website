@@ -1,0 +1,343 @@
+@import "./base.css";
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap");
+
+/* import ubuntu mono font */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;800&display=swap");
+
+body,
+html {
+  /* gradient background animated */
+  background: linear-gradient(190deg, #1a1825, #1a1825, #23a6d5, #1a1825);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  background-attachment: fixed;
+}
+
+nav {
+  background-color: transparent;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Jost", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+nav .button,
+h1 .button {
+  border-radius: 100px;
+  /* add glass effect */
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.035);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+h1 .button {
+  margin-top: 10px;
+  border-radius: 100px;
+}
+
+h1 {
+  text-align: left;
+}
+
+main {
+  margin-top: 25px;
+  width: 95%;
+  margin-left: 10px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*send children to left*/
+  text-align: left;
+}
+
+.second {
+  /*center self*/
+
+  width: 65%;
+  margin-left: auto;
+  height: 100%;
+  /* align children to the left */
+  text-align: left;
+  /* send children to the left */
+  margin-right: auto;
+}
+
+.title {
+  font-family: "Jost", sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.subtitle {
+  font-family: "Jost", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+code {
+  font-family: monospace;
+  padding: 1px 1px;
+  border-radius: 0.375em;
+  background: transparent;
+  width: 100%;
+}
+
+code::selection {
+  background-color: hsl(230, 7%, 23%);
+  color: hsl(0, 0%, 100%);
+}
+
+/* code block */
+.code-snippet {
+  border-radius: 0.375em;
+  background: transparent;
+}
+
+.code-snippet code {
+  line-height: 1.45;
+  font-size: 0.9375rem;
+  display: block;
+  padding: 1.5rem;
+  /* make overflow-x go to new line */
+  overflow-wrap: break-word;
+  overflow-x: auto;
+  background-color: rgba(46, 41, 41, 0.156);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  /* add contrast for the backdrop-filter */
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.submain {
+  /* grid, 2 things in a row */
+  display: grid;
+
+  /*  grid-template-columns: repeat(2, 1fr);*/
+  /* make grid %30 and %70 */
+  grid-template-columns: 40% 60%;
+  /* responsive */
+
+  grid-gap: 10px;
+  width: 62%;
+  margin-top: 10px;
+}
+
+.semi-title {
+  font-family: "Jost", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.explanation {
+  margin-top: 10px;
+  text-align: left;
+}
+
+ul {
+  margin-left: 10px;
+}
+
+main img {
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+
+  /* act out of the bounds of the parent */
+  position: relative;
+  top: 3px;
+}
+
+button {
+  border-radius: 10px;
+  /* add glass effect */
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.035);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.semi-title-X {
+  font-family: "Jost", sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #fff;
+  margin-top: 10px;
+  /* go to the left */
+}
+
+/* Style the button */
+
+.dropdown {
+  /* go to the left */
+  float: left;
+}
+
+.btn {
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  /* add glass effect */
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.035);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.btn:hover {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+/* Style the dropdown container */
+.dropdown {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.name {
+  /* Jost bold font */
+  font-family: "Jost", sans-serif;
+  font-weight: 700;
+}
+
+/* Style the dropdown content */
+.dropdown-content {
+  margin-top: 10px;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.035);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 5px;
+  padding: 8px 0;
+  z-index: 1;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+/* Show the dropdown content when the button is clicked or hovered */
+.dropdown:hover .dropdown-content,
+.dropdown:focus-within .dropdown-content {
+  display: block;
+}
+
+/* 0px for border radius for btn when dropdown is open */
+.dropdown:hover .btn,
+.dropdown:focus-within .btn {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+/* Style the links in the dropdown */
+.dropdown-content a {
+  color: #ffffff;
+  padding: 12px 24px;
+  font-size: 16px;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+/* Style the links in the dropdown on hover */
+.dropdown-content a:hover {
+  background-color: #3a86de41;
+}
+
+.buttonss {
+  margin-top: 15px;
+  justify-content: flex-start;
+  width: 63%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* mobile only */
+@media screen and (max-width: 800px) {
+  .buttonss {
+    width: 100%;
+  }
+
+  .submain {
+    display: grid;
+    grid-template-columns: 100%;
+    width: 99%;
+    margin-top: 10px;
+  }
+
+  .dropdown:focus-within .dropdown-content,
+  .dropdown:active .dropdown-content {
+    display: block;
+  }
+
+  .dropdown:focus-within .btn,
+  .dropdown:active .btn {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .dropdown:focus-within .btn,
+  .dropdown:active .btn {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+}
+
+.second {
+  /* flex */
+  display: flex;
+  /* go to the left */
+  justify-content: flex-start;
+  /* go to the top */
+  align-items: flex-start;
+  /* go to the left */
+  /* go to the top */
+  margin-top: 10px;
+  width: 95%;
+  /* center self */
+  justify-self: center;
+  /* center self */
+  align-self: center;
+  /* go to the left */
+  gap: 10px;
+}
+
+.thing {
+  /* a thing is a card  with a glass effect */
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.035);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.25);
+  width: 90%;
+  height: 200px;
+}
